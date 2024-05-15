@@ -26,7 +26,7 @@ navigator.mediaDevices.getUserMedia(constraints, { video: true })
     };
 
     mediaRecorder.onstop = () => {
-        const blob = new Blob(chunks, { type: 'video/webm;codecs=vp8' });
+        const blob = new Blob(chunks, { type: 'video/webm;codecs=vp9' });
         chunks = [];
         const videoURL = URL.createObjectURL(blob);
         downloadLink.href = videoURL;
@@ -57,6 +57,6 @@ function updateTimer() {
     let elapsedTime = Math.floor((currentTime - startTime) / 1000);
     let minutes = Math.floor(elapsedTime / 60).toString().padStart(2, '0');
     let seconds = (elapsedTime % 60).toString().padStart(2, '0');
-  
+
     timer.textContent = `${minutes}:${seconds}`;
-}  
+}

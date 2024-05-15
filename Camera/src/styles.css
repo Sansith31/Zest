@@ -30,14 +30,14 @@ td {
 }
 
 .button1 {
-    background-color: rgb(160, 0, 0);
+    background-color: royalblue;
     width: 200px;
     height: 200px;
     border-radius: 30%;
 }
 
 .button1:hover {
-    background-color: rgb(200, 0, 0);
+    background-color: powderblue;
 }
 
 .button2 {
