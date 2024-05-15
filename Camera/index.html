@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="src/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>ILY <3</title>
     </head>
-    <body background="img/wally.jpg">
-            <video id="video" width="800" height="600" autoplay style="border: 5px solid #000000"></video>
-        <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-            <button class="button button1"><img src="img/Record.png" alt="buttonpng" border="0" /></button>
-            <button class="button button2"><img src="img/Stop.png" alt="buttonpng" border="0" /></button>
-            <a id="downloadLink" style="display: none">Download</a>
-        </div>
 
+    <body background="img/wally.jpg">
+        <div class="canva">
+            <table>
+                <tr>
+                    <td>
+                        <video id="video" autoplay></video>
+                    </td>
+                    <td align="center">
+                        <button id="startRecord" class="btn button1">
+                            <i class="fa fa-video-camera"></i> Record
+                        </button>
+                        <p style="font-size: 18px;" id="timer">00:00</p>
+                        <button id="stopRecord" class="btn button2">
+                            <i class="fa fa-stop"></i> Stop
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <a id="downloadLink" style="display: none">
+                            <button class="btn button3">
+                                <i class="fa fa-download"></i> Save
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
     <script src="src/main.js"></script>
     </body>
 </html>

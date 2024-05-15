@@ -1,23 +1,61 @@
 video {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    width: 1000px;
+    height: 550px;
 }
 
-body {
-    transform: scale(100%);
-    transform-origin: 25% 0;
+table {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.button {
+
+td {
+    width: 50%;
+}
+
+.canva {
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.btn {
     border: none;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    border-radius: 24px;
-    text-decoration: none;
-    background-color: rgba(255,255,255,0);
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    padding: 12px 30px;
     cursor: pointer;
+    font-size: 20px;
+}
+
+.button1 {
+    background-color: rgb(160, 0, 0);
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+}
+
+.button1:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+.button2 {
+    background-color: rgb(160, 0, 0);
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+}
+
+.button2:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+.button3 {
+    background-color: rgb(0, 85, 0);
+    width: 100%;
+}
+
+.button3:hover {
+    background-color: rgb(0, 120, 0);
 }
